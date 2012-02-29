@@ -85,8 +85,9 @@ we can tell the `source`-function what to use
 
 ```js
 // This will identifiy the file as a jade file and use the callback accordingly
-Sourcefile.source('./index.jade', ['coffee', 'stylus'], function(data, path) {
-  // fs.writeFile ...
+// Here we will write the private `style.styl` to the public `style.css`
+Sourcefile.source('./private/style.styl', ['coffee', 'stylus'], function(data, path, name) {
+    fs.writeFile(name.replace('/private/', '/public/'), data, 'utf8');
 });
 ```
 

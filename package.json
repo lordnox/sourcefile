@@ -4,7 +4,7 @@
   "description": "automatic sourcefile compiler for jade, stylus and coffeescript",
   "version": "0.0.1",
   "repository": {
-    "url": ""
+    "url": "git://github.com/lordnox/sourcefile.git"
   },
   "main": "sourcefile.coffee",
   "engines": {
