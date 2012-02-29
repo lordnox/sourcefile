@@ -58,12 +58,19 @@ jadeTemplate.on('compiled', function(data) {
 ```
 
 Available are:
- *  jade - Sourcefile.Jade
+
+ *  jade - Sourcefile.jade
+
     > compiled jade template function
- *  stylus - Sourcefile.Stylus
+
+ *  stylus - Sourcefile.stylus
+
     > compiled stylus css as string
- *  coffee-script - Sourcefile.Coffee
+
+ *  coffee-script - Sourcefile.coffee
+
     > compiled coffee-script javascript code as string
+
 
 ```js
 var template = '';
